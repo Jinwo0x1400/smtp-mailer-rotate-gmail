@@ -10,9 +10,18 @@ with open("accounts.json") as f:
     accounts = json.load(f)
 
 # Email content
-subject = "Test Email from Rotating Gmail SMTP"
-body = "This is a test email using rotated Gmail accounts."
-to_email = "recipient@example.com"  # Replace with your recipient
+subject = "Meeting Schedule Update"
+
+body = """\
+Hi [Recipient Name],
+
+Just a quick update on our meeting schedule. We’ll move it to Thursday at 10 AM instead of Friday. Let me know if that still works for you.
+
+Best regards,  
+Jinwoo  
+"""
+to_email = "yourclient@example.com"
+
 
 def send_email(account):
     try:
