@@ -22,7 +22,6 @@ Jinwoo
 """
 to_email = "yourclient@example.com"
 
-
 def send_email(account):
     try:
         msg = MIMEMultipart()
